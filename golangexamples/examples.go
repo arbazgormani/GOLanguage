@@ -22,6 +22,7 @@ func Encrypt(sliceToEncrypt []byte, ceaserCount int) {
 	for i := 0; i < len(sliceToEncrypt); i++ {
 		sliceToEncrypt[i] += byte(ceaserCount)
 	}
+	fmt.Printf(string(sliceToEncrypt))
 }
 
 //	Greetings
