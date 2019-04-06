@@ -17,10 +17,11 @@ func ConcatSlice(sliceToConcat []byte) string {
 }
 
 // Encrypt
-func Encrypt(sliceToConcat []byte, ceaserCount int) string {
+func Encrypt(sliceToEncrypt []byte, ceaserCount int) {
 
-	// var dummy string
-	return "HELLO"
+	for i := 0; i < len(sliceToEncrypt); i++ {
+		sliceToEncrypt[i] += byte(ceaserCount)
+	}
 }
 
 //	Greetings
